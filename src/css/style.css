@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    margin: 0 auto;
+    max-width: 99vw;
+    max-height: 5vw;
+    background-color: rgba(73, 73, 73, 0.26);
+}
+
+header {
+    width: 100%;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+header .links ul {
+    list-style-type: none;
+}
+
+header .links ul li {
+    display: inline-block;
+    margin: 0 40px;
+    font-size: 20px;
+}
+
+header .links ul li a {
+    color: black;
+    text-decoration: none;
+    transition: all.3s;
+}
+
+header .links ul li a:hover{
+    color: #fff;
+}
+
+
+header .btn-login {
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: orange;
+    color: black;
+    border: transparent;
+    border-radius: 20px;
+    width: 140px;
+    height: 50px;
+    padding: 5px;
+    transition: all .3s;
+}
+
+.btn-login:hover {
+    background-color: black;
+    color: white;
+}
+
+.container span {
+    font-size: 50px;
+    color: orange;
+}
+
+#conta{
+    padding: 10px;
+}
+
+.container .home {
+    background-image: url(../img/onibus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 99vw;
+    z-index: 0;
+    position: relative;
+}
+
+.container .home .objective {
+    text-align: center;
+    padding: 10vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container .home h1 {
+    text-align: left;
+    font-size: 30px;
+}
+
+.container .home p {
+    text-align: justify;
+    background-color: #d5d4d414;
+    width: 80%;
+}
+
+.login {
+    z-index: 1;
+    width: 90vh;
+    height: 75vh;
+    background-color: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login .container-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login .inputs {
+    font-size: 30px;
+}
+
+.login .title {
+    width: 100%;
+    font-size: 35px;
+    padding: 25px;
+}
+
+.login h1{
+    font-size: 50px; 
+}
+
+.login .title .backlogin{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.login .inputs input {
+    font-size: 25px;
+    padding: 2px 5px;
+}
+
+.login .cadastro{
+    background-color: #fff;
+    border: transparent;
+    cursor: pointer;
+    color: orange;
+    font-size: 20px;
+}
+
+.login #logar{
+    border: transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: orange;
+
+}
+
+.login .passwordscreen{
+    display: flex;
+    flex-direction: column;
+}
+
+.eye{
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+    right: 27%;
+
+}
+
+.login span{
+    font-size: 15px;
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+.UserMenu{
+    background-color: rgb(235, 145, 80);
+    height: 99vw;
+    width: 15vw;
+    opacity: 1;
+    transform: translateX(105%);
+    padding-top: 45px;
+    font-size: 17px;
+    box-shadow: -1px 2px 5px #000;
+    transition: all .6s ease-in-out;
+}
+
+.show{
+    transform: translateX(0); 
+}
+
+.disappear{
+    transform: translateX(105%);
+}
+
+.UserMenu, 
+.bi-list{
+    position: fixed;
+    color: #fff;
+    z-index: 1;
+    top: 20px;
+    right: 0;
+}
+
+.backMenu{
+    padding-left: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.UserMenu ul{
+    width: 100%;
+    text-align: center;
+}
+
+.UserMenu ul li,
+.UserMenu ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+    line-height: 3;
+    width: 100%;
+    transition: all .3s;
+}
+
+.UserMenu button{
+    border: none;
+    font-size: 17px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    transition: all .3s;
+}
+
+.UserMenu button:hover,
+.UserMenu ul li:hover{
+    background-color: #bcb9b9;
+    cursor: pointer;
+}
+
+.abrirFechar{
+    width: 100%;
+    padding-left: 10Apx;
+}
+
+.abrirFechar > i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container .container_motoristas h1 {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.container .container_motoristas img {
+    max-width: 100px;
+}
+
+.container .container_motoristas .motoristas {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.container .container_motoristas .motoristas p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container .rotas h1 {
+    font-size: 30px;
+    padding: 0 10px;
+}
+
+.container .rotas {
+    width: 99vw;
+}
+
+.user{
+    display: flex;
+    padding-left: 20%;
+    gap: 2px;
+}
+
+footer {
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    height: 4vw;
+    width: 99vw;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: orange;
+}
